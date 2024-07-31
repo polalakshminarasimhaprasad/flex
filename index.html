@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/0454434f54.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: whitesmoke;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .md {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 25px;
+            margin: 10px;
+            padding: 10px;
+            position: relative;
+            top: 100px;
+            z-index: 1;
+        }
+
+        .main {
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px; /* Rounded corners */
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .child {
+            border: 1px solid black;
+            width: 80px; /* Adjust width */
+            height: 80px; /* Adjust height */
+            margin-bottom: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .text {
+            margin: 10px 0;
+        }
+
+        i {
+            color: green;
+        }
+
+        .footer {
+            padding: 10px;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .view {
+            display: inline-block;
+            margin-top: 5px;
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+
+        .para {
+            margin: 10px 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .md {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                /* Adjust to fewer columns on smaller screens */
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            .main {
+                width: 100%;
+                padding: 5px;
+            }
+
+            .child {
+                width: 60px; /* Adjust width */
+                height: 60px; /* Adjust height */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="md">
+        <div class="main">
+            <div class="child"><img src="./img/stripe.png" alt="Stripe" /></div>
+            <div class="text">
+                Stripe<br />Payment Services
+                <br />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="para">
+                <h4>
+                    Get more content on your users with stripe data inside our platform
+                </h4>
+            </div>
+            <div class="footer">
+                Installed 172 times <a href="#" class="view">view &gt;</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="child"><img src="./img/mailchimp.png" alt="Mailchimp" /></div>
+            <div class="text">
+                Mailchimp<br />Project management
+                <br />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="para">
+                <h4>
+                    Capture and sync subscribers from your mailchimp platform to ours
+                    with ease.
+                </h4>
+            </div>
+            <div class="footer">
+                Installed 1234 times <a href="#" class="view">view &gt;</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="child"><img src="./img/dropbox.png" alt="Dropbox" /></div>
+            <div class="text">
+                Dropbox<br />File Management
+                <br />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="para">
+                <h4>
+                    Use dropbox to sync your photos to our platform and share it with
+                    others.
+                </h4>
+            </div>
+            <div class="footer">
+                Installed 1234 times <a href="#" class="view">view &gt;</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="child"><img src="./img/shopify.png" alt="Shopify" /></div>
+            <div class="text">
+                Shopify<br />Ecommerce
+                <br />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="para">
+                <h4>
+                    Sell your items with ease without having any website with our free
+                    platform
+                </h4>
+            </div>
+            <div class="footer">
+                Installed 1234 times <a href="#" class="view">view &gt;</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="child"><img src="./img/atlasian.png" alt="Atlassian" /></div>
+            <div class="text">
+                Atlassian<br />Project management
+                <br />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="para">
+                <h4>
+                    Developing products for developers, project managers, and architects.
+                </h4>
+            </div>
+            <div class="footer">
+                Installed 345 times <a href="#" class="view">view &gt;</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="child"><img src="./img/salesforce.png" alt="Salesforce" /></div>
+            <div class="text">
+                Salesforce<br />Project management
+                <br />
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="para">
+                <h4>
+                    Developing products for developers, project managers, and architects.
+                </h4>
+            </div>
+            <div class="footer">
+                Installed 345 times <a href="#" class="view">view &gt;</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
